@@ -1,8 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Navbar from '../components/Navbar.astro';
+import Modal from '../components/Modal.astro';
 ---
 
+<Navbar />
 <Layout title="Welcome to Astro.">
 	<main>
 		<svg
@@ -38,6 +41,7 @@ import Card from '../components/Card.astro';
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
 		</p>
+		<Modal title="Modal de pruebas" body="Este es el body del modal de pruebas, con contenido que se pasa usando la interfaz" btnClose="Cerrar" btnOpenModal="Abrir" />
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="https://docs.astro.build/"
