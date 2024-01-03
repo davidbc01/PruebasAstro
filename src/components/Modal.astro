@@ -1,12 +1,12 @@
 ---
 interface Props {
-    title: string;
-    body: string;
-    btnClose: string;
-    btnOpenModal: string;
+  title: string;
+  body: string;
+  btnClose: string;
+  btnOpenModal: string;
 }
 
-const {title, body, btnClose, btnOpenModal} = Astro.props;
+const { title, body, btnClose, btnOpenModal } = Astro.props;
 ---
 
 <button class="btn" onclick="my_modal_5.showModal()">{btnOpenModal}</button>
